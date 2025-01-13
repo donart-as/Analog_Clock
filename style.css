@@ -1,0 +1,54 @@
+/* Basic style for the body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f0f0f0; /* Light background */
+  }
+  
+  /*clock background, border*/
+  .clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 8px solid #333;
+    border-radius: 50%;
+    background: #fff;
+    background-image: url('./images/bild.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* pointer */
+  .hand {
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    background: #333;
+    top: 50%;
+    left: 17%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+  }
+  
+    /* hour hand */
+  .hour-hand {
+    width: 30%;
+    height: 4px;
+    left: 20%;
+  }
+   /* minutes hand */
+  .min-hand {
+    width: 40%;
+    left: 10%;
+  }
+  /* second hand */
+  .second-hand {
+    background: red;
+    left: 10%;
+    top: 50%;
+    width: 40%;
+
+  }
